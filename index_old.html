@@ -135,45 +135,14 @@
 
         /* Mobile specific tweaks */
         @media (max-width: 480px) {
-            .container {
-                padding: 1.5rem 1.2rem; /* Slightly tighter padding for small screens */
-            }
-
-            header {
-                flex-direction: column;
-                gap: 1.5rem;
-                text-align: center;
-            }
-
-            h1 {
-                letter-spacing: 2px; /* Slightly tighter tracking for small screens */
-            }
-
-            nav {
-                margin: 0;
-                display: flex;
-                justify-content: center;
-            }
-
-            nav a {
-                /* Remove the left margin and use a gap instead for perfect centering */
-                margin: 0 0.6rem; 
-            }
-
             .bio-section {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+            }
+            header {
+                flex-direction: column;
                 gap: 1rem;
-            }
-
-            .artist-photo {
-                width: 100px; /* Slightly smaller for better proportions on mobile */
-                height: 100px;
-            }
-
-            .blurb-text {
-                font-size: 0.9rem; /* Better readability on small screens */
             }
         }
     </style>
@@ -199,10 +168,10 @@
             </section>
 
             <section class="bio-section">
+                <img src="assets/artist_photo.jpeg" alt="Artist Portrait" class="artist-photo">
                 <div class="blurb-text">
                     <p> Hello there! I am Nivedita Bhaskhar (sometimes an ideallaedi). I work in multiple mediums including gouache, oil pastel, acrylic, and charcoal. This is a glimpse into my curated portfolio. More soon ...
                 </div>
-                <img src="assets/artist_photo.jpeg" alt="Artist Portrait" class="artist-photo">
             </section>
         </main>
 
